@@ -9,8 +9,10 @@ header {
 }
 
 /* this is a bit hacky - using a fixed width because there's some weird added negative space on the left before About */
+/* added position sticky but it's not behaving how I want it to. Need to figure this out later */
 nav {
     background-color:#ffffff;
+    position:sticky;
     display: inline-block;
     width: 360px;
     padding: 2px;
