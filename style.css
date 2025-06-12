@@ -1,25 +1,47 @@
 body {
     background-color: beige;
-}
-
-header {
-    display: block;
-}
-
-nav {
-    background-color:#ff5900;
-    padding: 16px;
-    border-radius: 60px;
     margin: 0px auto;
     text-align: center;
 }
 
-ul, li, a {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    display: inline;
+header {
+   margin: 32px 32px;
+}
+
+/* this is a bit hacky - using a fixed width because there's some weird added negative space on the left before About */
+nav {
+    background-color:#ffffff;
+    display: inline-block;
+    width: 360px;
+    padding: 2px;
+    border-radius: 60px;
+    margin: 16px 16px;
+    text-align: left;
+    box-shadow: 0 0 16px rgba(162, 57, 0, 0.25);
+   
+}
+
+ul {
+}
+
+li{
+    display: inline-block;
+    font-family: 'Poppins Extrabold', Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #ffffff;
-    margin: 0, 16px;
+    padding: 0 8px;
+    transition: 0.2ms ease-in-out;
+}
+
+a {
+    color:#ff5900;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color:#a23900;
 }
 
 h1 {
@@ -39,21 +61,29 @@ h2 {
 
 hr {
     border: solid 1px #ff5900;
-    margin-bottom: 40px;
-    margin-left: 0px;
     width: 450px;
+    margin: 0 auto;
 }
 
+/* styling for the image - edited it so it wasn't massive. scaling it in CSS changes the appearance but keeps the space of the original size! */
+/* was going mad wondering why there was huge space around it */
 .portrait {
-    scale: 0.25;
     border-radius: 50%;
     text-align:left;
 }
 
 p {
     font-family: Helvetica, Arial, sans-serif;
+    color: #a23900;
     font-size: 20px;
     max-width: 600px;
+    text-align: left;
+}
+
+section {
+    padding: 16px;
+    max-width: 600px;
+    margin: 0px auto;
 }
 
 label {
