@@ -240,3 +240,17 @@ select {
     font-size: 16px;
     color:#ff5900;
 }
+
+footer {
+    padding: 24px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+/* using h4 for copyright in footer, as p can't be centered - need to get my head around classes and ids properly later*/
+h4 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color:#a23900;
+    font-size: 20px;
+    font-weight: 500;
+}
