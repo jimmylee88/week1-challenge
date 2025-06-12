@@ -18,10 +18,6 @@ nav {
     margin: 16px 16px;
     text-align: left;
     box-shadow: 0 0 16px rgba(162, 57, 0, 0.25);
-   
-}
-
-ul {
 }
 
 li{
@@ -36,6 +32,7 @@ li{
 a {
     color:#ff5900;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover {
@@ -70,6 +67,7 @@ hr {
 .portrait {
     border-radius: 50%;
     text-align:left;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 p {
@@ -84,6 +82,19 @@ section {
     padding: 16px;
     max-width: 600px;
     margin: 0px auto;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 8px 16px;
+    margin: 16px;
+    border-radius: 40px;
+    box-shadow: 0 0 16px rgba(162, 57, 0, 0.25);
+    transition: all 0.2s ease-in-out;
+}
+
+article:hover {
+    scale: 0.95;
 }
 
 label {
