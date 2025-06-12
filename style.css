@@ -31,6 +31,7 @@ li{
 
 a {
     color:#ff5900;
+    font-weight: bold;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
@@ -116,4 +117,119 @@ label {
     font-family: Poppins, Helvetica, Arial, sans-serif;
     font-size: 15px;
     max-width: 700px;
+}
+
+/* this is the form I was working on for the exercise in w2 and I got a bit carried away */
+form {
+    text-align: left;
+    margin-left: 24px;
+}
+
+button {
+    padding: 8px 24px;
+    border: none;
+    background-color: #ff5900;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 16px 0px;
+    box-shadow: 6px 6px 0 #a23900;
+    transition: all 0.2s ease-in-out;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #a23900;
+    box-shadow: 0px 0px 0 #a23900;
+    
+}
+
+button:active {
+    background-color: #000000;
+    scale: 0.95;
+}
+
+input {
+    margin: 8px 0px;
+    padding: 8px 8px;
+    width: 266px;
+    border: 2px dashed;
+} 
+
+input:focus {
+   box-shadow: 0 0 16px rgba(255, 89, 0, 0.5);
+}
+
+textarea:focus {    
+   box-shadow: 0 0 16px rgba(255, 89, 0, 0.5);
+}
+
+select:focus {
+    box-shadow: 0 0 16px rgba(255, 89, 0, 0.5);
+}
+
+input:required {
+    border: 2px solid;
+}
+
+/* Using pseudo elements to show validation errors for required email field */
+input + span {
+    position: relative;
+}
+
+input + span:before{
+    position: absolute;
+    right: -25px;
+    top: 1px;
+}
+
+input:invalid {
+    border: 2px solid #a23900;
+}
+
+input:invalid + span:before {
+    content: "❌";
+}
+
+input:valid + span:before {
+    content:"✅";
+}
+
+label {
+    margin: 0 10px 10px 0;
+}
+
+/* This is my pseudo element for adding a red asterisk to indicate which field is required */
+.email-label:after {
+    content: "✱";
+    margin-left: 4px;
+    font-size: 16px;
+    color:#ff5900;
+}
+
+textarea {
+    resize: none;
+    width: 430px;
+    margin-top: 10px;
+    padding: 8px;
+    border: 2px dashed;
+}
+
+select {
+    padding: 8px 8px;
+    margin: 20px 0 20px 0;
+    width: 200px;
+    border-width: 2px;
+}
+
+/* This is my pseudo element for adding a red asterisk before the disclaimer text, using it like a key to explain*/
+.disclaimer {
+    font-size: 16px;
+}
+
+.disclaimer:before {
+    content: "✱";
+    margin-right: 4px;
+    font-size: 16px;
+    color:#ff5900;
 }
