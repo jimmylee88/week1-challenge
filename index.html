@@ -11,54 +11,71 @@
 <!-- Navigation with buttons to anchor links-->
 <nav>
     <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
 <!--Header with Image & Big Title-->
 <header>
-    <img class="portrait" src="/portrait_square.png"/>
+    <img class="portrait" src="images/portrait_square.png"/>
     <h1>Jimmy Lee</h1>
-    <h2>Designer & Developer in training</h2>
+    <h3>Designer & Developer (in training)</h3>
 </header>
 <hr>
 <!--First Section with Intro/About Me blurb-->
-<section>
-    <h2>About Me</h2>
-    <p>With a background in Design, I'm really excited about learning how to code with the lovely folks at <a href="https://www.step8up.co.uk">Step8Up</a></a>, so I can identify opportunities to bring the two disciplines together in future projects.</p>
-    <p>Outside of my training, I enjoy playing the Guitar and Bass, practicing Yoga, and </p>
+<section id="about">
+    <h3>About Me</h3>
+    <p>With a background in Design, I'm really excited about learning how to code with the lovely folks at <a href="https://www.step8up.co.uk">Step8Up</a>, so I can identify opportunities to bring the two disciplines together in future projects.</p>
+    <p>I care about Tech for Good, engaging with, and empowering the under-represented, especially the ESEA (East & South East Asian) communities within the arts and creative industries.</p>
+    <p>Outside of work & training, I enjoy playing the Guitar and Bass, practicing Yoga, and watching cat videos.</p>
 </section>
 
 <!--Second Section with Project Cards-->
-<section>
+<section id="projects">
+    <h2>Projects</h2>
     <article>
         <img src=""/>
-        <h2>Robot Project</h2>
+        <h3>Robot Project</h3>
         <p>I built a robot to make me cups of tea</p>
     </article>
     <article>
         <img src=""/>
-        <h2>AI  Guitar Tuner</h2>
+        <h3>AI  Guitar Tuner</h3>
         <p>I wrote an app to quickly help tune my guitar, and keep a note of weird alternate tunings</p>
     </article>
 </section>
 
 <!--Third Section with Contact Form-->
-<section>
-    <form>
-
-    </form>
+<section id="contact">
+    <h2>Contact</h2>
+    <form action="submit.php" method="post">
+    <label for="name">Your Name:</label><br>
+    <input type="name" name="name" id="name"/>
+    <br>
+    <label for="email" class="email-label">Email:</label><br>
+    <input type="email" name="email" id="email" required/>
+    <span></span>
+    <br>
+    <br>
+    <label for="dropdown">Request:</label>
+    <br>
+    <label for="message">Message:</label><br>
+    <textarea cols="20" rows="10" placeholder="Enter an optional message here..."></textarea>
+    <br>
+    <button>Submit Request</button>
+    <p class="disclaimer">These fields are required</p>
+</form>
 </section>
 
 <!--Footer with email link, phone, and LinkedIn URL-->
 <!--remember to use pseudo elements for icons to affix each-->
 <footer>
     <ul>
-        <li><a href="">Email</a></li>
-        <li><a href="">Phone</a></li>
-        <li><a href="">LinkedIn</a></li>
+        <li><a href="mailto:jimlee.dev@gmail.com">Email</a></li>
+        <li><a href="tel:+447800656404">Phone</a></li>
+        <li><a href="https://www.linkedin.com/in/mrjimelee/">LinkedIn</a></li>
     </ul>
 </footer>
 </body>
