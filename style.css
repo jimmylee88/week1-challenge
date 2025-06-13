@@ -102,7 +102,7 @@ section {
 article {
     background-color: #ffffff;
     padding: 8px 24px;
-    margin: 16px;
+    margin: 32px 16px;
     border-radius: 40px;
     box-shadow: 0 0 16px rgba(162, 57, 0, 0.25);
     transition: all 0.2s ease-in-out;
@@ -110,6 +110,7 @@ article {
 
 article:hover {
     scale: 0.95;
+    box-shadow: none;
 }
 
 article:active {
